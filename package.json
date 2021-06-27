@@ -1,21 +1,49 @@
 {
   "name": "gulp-squoosh",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Gulp plugin to compress images using Squoosh",
-  "main": "index.js",
-  "scripts": {
-    "start": "gulp --gulpfile tests/gulpfile.js",
-    "clear-cache": "gulp --gulpfile tests/gulpfile.js clearCache",
-    "format": "prettier -wu ."
+  "keywords": [
+    "gulpplugin",
+    "squoosh",
+    "image",
+    "compress",
+    "convert",
+    "minify",
+    "png",
+    "jpg",
+    "jpeg",
+    "mozjpeg",
+    "oxipng",
+    "webp",
+    "avif",
+    "wp2",
+    "jxl"
+  ],
+  "author": "Eugene <mail2chenaski@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenaski/gulp-squoosh.git"
   },
-  "keywords": [],
-  "author": "chenaski",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenaski/gulp-squoosh/issues"
+  },
+  "homepage": "https://github.com/chenaski/gulp-squoosh",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*": "prettier -wu"
+  },
+  "scripts": {
+    "start": "gulp --gulpfile tests/gulpfile.js",
+    "clear-cache": "gulp --gulpfile tests/gulpfile.js clearCache",
+    "format": "prettier -wu ."
   },
   "dependencies": {
     "@squoosh/lib": "^0.3.1",
