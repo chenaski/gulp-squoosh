@@ -50,6 +50,8 @@ const DEFAULT_ENCODE_OPTIONS = {
 
 ## Example
 
+[Full Example](exmaples/gulpfile.js)
+
 ```js
 const gulp = require("gulp");
 const gulpSquoosh = require("gulp-squoosh");

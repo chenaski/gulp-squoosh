@@ -1,11 +1,10 @@
 const gulp = require("gulp");
+const gulpSquoosh = require("gulp-squoosh");
 const gulpCache = require("gulp-cache");
 const del = require("del");
 
-const gulpSquoosh = require("../index");
-
-const SOURCE = "fixtures/*";
-const DESTINATION = "build";
+const SOURCE = "src/images/**";
+const DESTINATION = "dist/images";
 
 function clear() {
   return del(["build"], { force: true });
