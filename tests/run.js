@@ -1,5 +1,5 @@
 (async () => {
-  // $.verbose = false;
+  $.verbose = false;
 
   const IMAGE_NAME = "gulp-squoosh-node";
   const NODE_VERSIONS = [
@@ -20,43 +20,34 @@
   };
 
   const runImages = async ({ version }) => {
-    console.log(`\n\n\nstart node:${version}\n\n\n`);
-
-    return { version, exitCode: 0 };
-
     return await $`docker run --rm ${IMAGE_NAME}:${version}`
       .then((result) => {
         return {
+          version,
           exitCode: result.exitCode,
         };
       })
       .catch((result) => {
         return {
+          version,
           exitCode: result.exitCode,
         };
       });
   };
 
-  const results = [];
+  const promises = NODE_VERSIONS.map(async (version) => {
+    await removeImages({ version });
+    await buildImages({ version });
 
-  for (const version of NODE_VERSIONS) {
-    try {
-      await removeImages({ version });
-      await buildImages({ version });
+    console.log(`run node:${version}`);
+    return await runImages({ version });
+  });
 
-      const { exitCode } = await runImages({ version });
-
-      results.push({ version, exitCode });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  console.log(
-    `\n\n\n${results
-      .map(({ version, exitCode }) =>
-        console.log(`node:${version} ${!exitCode}`)
-      )
-      .join("\n")}\n\n\n`
-  );
+  Promise.all(promises).then((results) => {
+    console.log(
+      `\n${results
+        .map(({ version, exitCode }) => `node:${version} ${!exitCode}`)
+        .join("\n")}\n`
+    );
+  });
 })();

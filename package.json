@@ -49,7 +49,7 @@
     "format": "prettier -wu .",
     "test": "jest -i",
     "test:docker": "tests/run",
-    "test:docker:node": "zx tests/run.js"
+    "test:docker:serial": "zx tests/run.js"
   },
   "dependencies": {
     "@squoosh/lib": "^0.3.1",
