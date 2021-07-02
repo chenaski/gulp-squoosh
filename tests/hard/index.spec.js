@@ -34,7 +34,7 @@ describe("gulp-squoosh", () => {
 
   describe("default options", () => {
     test.each(FIXTURE_IMAGES_PATHS)(
-      "should return one file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
+      "returns one file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
       async (imagePath) => {
         return compareWithExpectedData({
           imagePath,
@@ -57,7 +57,7 @@ describe("gulp-squoosh", () => {
       };
 
       test.each(FIXTURE_IMAGES_PATHS)(
-        "should return one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
+        "returns one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
         async (imagePath) => {
           return compareWithExpectedData({
             imagePath,
@@ -71,7 +71,7 @@ describe("gulp-squoosh", () => {
 
     describe("as function", () => {
       test.each(FIXTURE_IMAGES_PATHS)(
-        "should return one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
+        "returns one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_DEFAULT",
         async (imagePath) => {
           return compareWithExpectedData({
             imagePath,
@@ -90,7 +90,7 @@ describe("gulp-squoosh", () => {
     };
 
     test.each(FIXTURE_IMAGES_PATHS)(
-      "should return one file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
+      "returns one file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
       async (imagePath) => {
         return compareWithExpectedData({
           imagePath,
@@ -115,7 +115,7 @@ describe("gulp-squoosh", () => {
 
     describe("as object", () => {
       test.each(FIXTURE_IMAGES_PATHS)(
-        "should return one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
+        "returns one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
         async (imagePath) => {
           return compareWithExpectedData({
             imagePath,
@@ -129,7 +129,7 @@ describe("gulp-squoosh", () => {
 
     describe("as function", () => {
       test.each(FIXTURE_IMAGES_PATHS)(
-        "should return one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
+        "returns one RESIZED file for each codec specified in FIXTURE_ENCODE_OPTIONS_CUSTOM",
         async (imagePath) => {
           return compareWithExpectedData({
             imagePath,

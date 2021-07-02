@@ -1,7 +1,7 @@
 const fs = require("fs");
 const Vinyl = require("vinyl");
 
-const gulpSquoosh = require("../../index");
+const gulpSquoosh = require("../../../index");
 
 const run = async (filePath, options) => {
   const buffer = await fs.promises.readFile(filePath);

@@ -2,12 +2,7 @@
   $.verbose = false;
 
   const IMAGE_NAME = "gulp-squoosh-node";
-  const NODE_VERSIONS = [
-    "10-alpine",
-    "12.5.0-alpine",
-    "14.0.0-alpine",
-    "16.0.0-alpine",
-  ];
+  const NODE_VERSIONS = ["12.5.0-alpine", "14.0.0-alpine", "16.0.0-alpine"];
 
   const removeImages = async ({ version }) => {
     try {

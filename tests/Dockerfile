@@ -12,5 +12,4 @@ COPY tests /app/tests
 
 RUN npm ci
 
-CMD npm run start
-
+CMD npm --no-update-notifier run test

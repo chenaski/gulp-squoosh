@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const { DEFAULT_ENCODE_OPTIONS } = require("../../lib/processImage");
+const { DEFAULT_ENCODE_OPTIONS } = require("../../../lib/processImage");
 
-const FIXTURES_DIR = path.resolve(__dirname, "../fixtures");
+const FIXTURES_DIR = path.resolve(__dirname, "../../fixtures");
 const FIXTURE_IMAGES_PATHS = fs
   .readdirSync(FIXTURES_DIR)
   .map((fileName) => path.join(FIXTURES_DIR, fileName));

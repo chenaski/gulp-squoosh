@@ -35,7 +35,8 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "lib"
+    "lib",
+    "!lib/*.spec.js"
   ],
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -44,12 +45,11 @@
     "*": "prettier -wu"
   },
   "scripts": {
-    "start": "gulp --gulpfile tests/gulpfile.js",
-    "clear-cache": "gulp --gulpfile tests/gulpfile.js clearCache",
     "format": "prettier -wu .",
-    "test": "jest -i",
-    "test:docker": "tests/run",
-    "test:docker:serial": "zx tests/run.js"
+    "test": "jest --testPathIgnorePatterns tests/hard",
+    "test:hard": "jest --testPathPattern tests/hard",
+    "test:docker": "zx tests/run.js",
+    "test:docker:serial": "tests/run"
   },
   "dependencies": {
     "@squoosh/lib": "^0.3.1",
@@ -57,11 +57,7 @@
     "through2": "^2.0.5"
   },
   "devDependencies": {
-    "del": "^6.0.0",
     "get-stream": "^6.0.1",
-    "gulp": "^4.0.2",
-    "gulp-cache": "^1.1.3",
-    "gulp-squoosh": "^0.1.0",
     "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
