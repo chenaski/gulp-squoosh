@@ -58,7 +58,7 @@ const gulpSquoosh = require("gulp-squoosh");
 const gulpCache = require("gulp-cache");
 
 const SOURCE = "src/images/**";
-const DESTINATION = "dist/images";
+const DESTINATION = "build/images";
 
 function processImages() {
   return gulp

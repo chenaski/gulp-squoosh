@@ -4,7 +4,7 @@ const gulpCache = require("gulp-cache");
 const del = require("del");
 
 const SOURCE = "src/images/**";
-const DESTINATION = "dist/images";
+const DESTINATION = "build/images";
 
 function clear() {
   return del(["build"], { force: true });
