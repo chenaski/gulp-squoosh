@@ -100,7 +100,7 @@ function processImages() {
   - [ ] Store the original resource for screens with maximum DPR, then resize for all supported screen sizes
 - [ ] Find out what the `preprocessOptions.resize.enabled` affects
 - [ ] `CHANGELOG.md`
-- [ ] Git workflow for tests
+- [x] Git workflow for tests
 - [ ] [dependabot](https://github.com/dependabot)
 - [ ] JSDoc or d.ts
 - [ ] [yaspeller](https://github.com/hcodes/yaspeller)
