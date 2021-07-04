@@ -87,3 +87,27 @@ function processImages() {
     .pipe(gulp.dest(DESTINATION));
 }
 ```
+
+## TODO
+
+### Before 1.0.0 release:
+
+- [ ] `@squoosh/lib` to `peerDependencies`
+- [ ] `README.md`
+  - [ ] Example of using the resulting images in HTML
+  - [ ] Possible build option without `.png` and `.jpg`
+  - [ ] Section with useful links
+  - [ ] Store the original resource for screens with maximum DPR, then resize for all supported screen sizes
+- [ ] Find out what the `preprocessOptions.resize.enabled` affects
+- [ ] `CHANGELOG.md`
+- [ ] Git workflow for tests
+- [ ] [dependabot](https://github.com/dependabot)
+- [ ] JSDoc or d.ts
+- [ ] [yaspeller](https://github.com/hcodes/yaspeller)
+- [ ] Rewrite `.gitignore`
+
+### Someday:
+
+- [ ] Logging (compression %, before kB, after kB)
+- [ ] Support for `presets` to create multiple images of different sizes \
+       `[ { resize: { width: width * 0.5 } }, { postfix: "@2x" } ]`
