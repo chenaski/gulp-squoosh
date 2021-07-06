@@ -101,7 +101,7 @@ function processImages() {
 - [ ] Find out what the `preprocessOptions.resize.enabled` affects
 - [ ] `CHANGELOG.md`
 - [x] Git workflow for tests
-- [ ] [dependabot](https://github.com/dependabot)
+- [x] [dependabot](https://github.com/dependabot)
 - [ ] JSDoc or d.ts
 - [x] [yaspeller](https://github.com/hcodes/yaspeller)
 - [x] Clear `.gitignore`
