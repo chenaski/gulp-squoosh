@@ -104,7 +104,7 @@ function processImages() {
 - [ ] [dependabot](https://github.com/dependabot)
 - [ ] JSDoc or d.ts
 - [x] [yaspeller](https://github.com/hcodes/yaspeller)
-- [ ] Rewrite `.gitignore`
+- [x] Clear `.gitignore`
 
 ### Someday:
 
