@@ -103,7 +103,7 @@ function processImages() {
 - [x] Git workflow for tests
 - [ ] [dependabot](https://github.com/dependabot)
 - [ ] JSDoc or d.ts
-- [ ] [yaspeller](https://github.com/hcodes/yaspeller)
+- [x] [yaspeller](https://github.com/hcodes/yaspeller)
 - [ ] Rewrite `.gitignore`
 
 ### Someday:

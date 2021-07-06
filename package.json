@@ -42,14 +42,16 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "prettier -wu"
+    "*": "prettier -wu",
+    "*.md": "yaspeller"
   },
   "scripts": {
     "format": "prettier -wu .",
-    "test": "jest --testPathIgnorePatterns tests/hard",
+    "test": "jest --testPathIgnorePatterns tests/hard && npm run spell-check",
     "test:hard": "jest --testPathPattern tests/hard",
     "test:docker": "zx tests/run.js",
-    "test:docker:serial": "tests/run"
+    "test:docker:serial": "tests/run",
+    "spell-check": "yaspeller *.md"
   },
   "dependencies": {
     "@squoosh/lib": "^0.3.1",
@@ -63,6 +65,22 @@
     "prettier": "^2.3.2",
     "simple-git-hooks": "^2.4.1",
     "vinyl": "^2.2.1",
+    "yaspeller": "^7.0.0",
     "zx": "^1.14.2"
+  },
+  "yaspeller": {
+    "lang": "en",
+    "dictionary": [
+      "squoosh",
+      "Squoosh",
+      "libSqooush",
+      "TODO",
+      "DPR",
+      "JSDoc",
+      "ts",
+      "kB",
+      "dependabot",
+      "yaspeller"
+    ]
   }
 }
