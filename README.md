@@ -50,7 +50,7 @@ const DEFAULT_ENCODE_OPTIONS = {
 
 ## Example
 
-[Full Example](examples/gulpfile.js)
+[Full Example](example/gulpfile.js)
 
 ```js
 const gulp = require("gulp");

@@ -47,10 +47,10 @@
   },
   "scripts": {
     "format": "prettier -wu .",
-    "test": "jest --testPathIgnorePatterns tests/hard && npm run spell-check",
-    "test:hard": "jest --testPathPattern tests/hard",
-    "test:docker": "zx tests/run.js",
-    "test:docker:serial": "tests/run",
+    "test": "jest --testPathIgnorePatterns test/hard && npm run spell-check",
+    "test:hard": "jest --testPathPattern test/hard",
+    "test:docker": "zx test/run.js",
+    "test:docker:serial": "test/run",
     "spell-check": "yaspeller *.md"
   },
   "dependencies": {
