@@ -123,3 +123,5 @@ export interface EncodeOptions {
 export function gulpSquoosh(
   options?: GulpSquooshOptions | GulpSquooshOptionsFactory
 ): NodeJS.ReadWriteStream;
+
+export default gulpSquoosh;

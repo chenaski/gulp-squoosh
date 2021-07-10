@@ -1,8 +1,9 @@
-import * as gulp from "gulp";
+import gulp from "gulp";
+import gulpSquoosh from "../index";
+
 import {
   AvifOptions,
   EncodeOptions,
-  gulpSquoosh,
   GulpSquooshOptions,
   GulpSquooshOptionsFactory,
   JxlOptions,
