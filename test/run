@@ -12,7 +12,7 @@ for version in "${NODE_VERSIONS[@]}"; do
   printf "\n\n\nrun node:%s\n\n" "$version"
 
   docker rmi "$IMAGE_NAME:$version"
-  docker build -q -t "$IMAGE_NAME:$version" --build-arg NODE_VERSION="$version" -f tests/Dockerfile .
+  docker build -q -t "$IMAGE_NAME:$version" --build-arg NODE_VERSION="$version" -f test/Dockerfile .
 
   if docker run --rm "$IMAGE_NAME:$version"; then
     results+=("node:$version true")

@@ -11,7 +11,7 @@
   };
 
   const buildImages = async ({ version }) => {
-    return await $`docker build -q -t ${IMAGE_NAME}:${version} --build-arg NODE_VERSION=${version} -f tests/Dockerfile .`;
+    return await $`docker build -q -t ${IMAGE_NAME}:${version} --build-arg NODE_VERSION=${version} -f test/Dockerfile .`;
   };
 
   const runImages = async ({ version }) => {
