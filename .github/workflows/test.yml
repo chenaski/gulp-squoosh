@@ -5,12 +5,29 @@ on:
   pull_request:
 
 jobs:
-  tests:
+  full:
+    name: Node.js 16 Full
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Run tests
+        run: npm test
+
+  short:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version:
-          - 16.0.0
           - 14.0.0
           - 12.5.0
 
@@ -28,4 +45,4 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run tests
-        run: npm test
+        run: npm run jest
