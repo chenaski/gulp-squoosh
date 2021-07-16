@@ -7,6 +7,5 @@
     "allowJs": true,
     "strict": true,
     "noEmit": true
-  },
-  "exclude": ["**/errors.ts"]
+  }
 }
