@@ -55,7 +55,7 @@
     "test:docker": "zx test/run.js",
     "test:docker:serial": "test/run.sh",
     "check-dts": "check-dts",
-    "spell-check": "yaspeller *.md",
+    "spell-check": "yaspeller README.md",
     "generate-changelog": "npx conventional-changelog-cli -i CHANGELOG.md -s"
   },
   "dependencies": {
