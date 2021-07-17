@@ -1,3 +1,7 @@
+## 0.5.1 (2021-07-17)
+
+- Remove `preprocessOptions.resize.enabled` field ([15515f7](https://github.com/chenaski/gulp-squoosh/commit/15515f7))
+
 ## 0.5.0 (2021-07-16)
 
 - Fix paths ([573a452](https://github.com/chenaski/gulp-squoosh/commit/573a452))
