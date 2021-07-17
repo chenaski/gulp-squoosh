@@ -36,7 +36,6 @@ const getExpectedData = async () => {
         if (sizeOptions) {
           await image.preprocess({
             resize: {
-              enabled: true,
               width:
                 typeof sizeOptions.width === "function"
                   ? sizeOptions.width(width)

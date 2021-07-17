@@ -48,8 +48,8 @@ const wp2Options: Wp2Options = {
 };
 
 const preprocessOptions: PreprocessOptions = {
-  // THROWS ype '{ enabled: true; size: number; }' is not assignable to type 'ResizeOptions'
-  resize: { enabled: true, size: 0 },
+  // THROWS Type '{ size: number; }' is not assignable to type 'ResizeOptions'
+  resize: { size: 0 },
 };
 
 const encodeOptions: EncodeOptions = {

@@ -68,7 +68,6 @@ function processImages() {
         gulpSquoosh(({ width, height, size }) => ({
           preprocessOptions: {
             resize: {
-              enabled: true,
               width: width * 0.5,
               height: height * 0.5,
             },
@@ -98,7 +97,7 @@ function processImages() {
   - [ ] Possible build option without `.png` and `.jpg`
   - [ ] Section with useful links
   - [ ] Store the original resource for screens with maximum DPR, then resize for all supported screen sizes
-- [ ] Find out what the `preprocessOptions.resize.enabled` affects
+- [x] Find out what the `preprocessOptions.resize.enabled` affects
 - [x] `CHANGELOG.md`
 - [x] Git workflow for tests
 - [x] [dependabot](https://github.com/dependabot)

@@ -50,7 +50,6 @@ describe("gulp-squoosh", () => {
       const options = {
         preprocessOptions: {
           resize: {
-            enabled: true,
             ...FIXTURE_SIZES[FIXTURE_SIZE_100_100],
           },
         },
@@ -106,7 +105,6 @@ describe("gulp-squoosh", () => {
     const options = {
       preprocessOptions: {
         resize: {
-          enabled: true,
           ...FIXTURE_SIZES[FIXTURE_SIZE_100_100],
         },
       },

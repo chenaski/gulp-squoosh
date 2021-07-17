@@ -46,7 +46,7 @@ const wp2Options: Wp2Options = {
 };
 
 const preprocessOptions: PreprocessOptions = {
-  resize: { enabled: true, width: 0 },
+  resize: { width: 0 },
 };
 
 const encodeOptions: EncodeOptions = {

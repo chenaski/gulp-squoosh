@@ -14,7 +14,6 @@ export type GulpSquooshOptionsFactory = ({
 }) => GulpSquooshOptions;
 
 export interface ResizeOptions {
-  enabled?: boolean;
   width?: number;
   height?: number;
 }
