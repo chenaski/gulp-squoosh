@@ -1,6 +1,6 @@
 {
   "name": "gulp-squoosh",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Gulp plugin to compress images using Squoosh",
   "keywords": [
     "gulpplugin",
