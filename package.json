@@ -80,6 +80,7 @@
   },
   "yaspeller": {
     "lang": "en",
+    "ignoreUrls": true,
     "dictionary": [
       "squoosh",
       "Squoosh",

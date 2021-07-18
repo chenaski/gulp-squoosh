@@ -1,6 +1,6 @@
 # gulp-squoosh
 
-Gulp plugin to compress images using [Squoosh](https://github.com/GoogleChromeLabs/squoosh)
+Gulp plugin to compress images using [Squoosh](https://github.com/GoogleChromeLabs/squoosh).
 
 ## Installation
 
@@ -24,7 +24,7 @@ function processImages() {
 
 ## Configuration
 
-For available options, see [libSqooush](https://github.com/GoogleChromeLabs/squoosh/blob/dev/libsquoosh/README.md)
+For available options, see [libSqooush](https://github.com/GoogleChromeLabs/squoosh/blob/dev/libsquoosh/README.md).
 
 ```js
 gulpSquoosh({
@@ -73,10 +73,10 @@ function processImages() {
             },
           },
           encodeOptions: {
-            webp: {},
+            jxl: {},
             avif: {},
+            webp: {},
             // mozjpeg: {},
-            // jxl: {},
             // oxipng: {},
             // wp2: {}
           },
@@ -87,26 +87,18 @@ function processImages() {
 }
 ```
 
-## TODO
+```html
+<picture>
+  <source srcset="image.jxl" type="image/jxl" />
+  <source srcset="image.avif" type="image/avif" />
+  <source srcset="image.webp" type="image/webp" />
+  <img src="image.webp" alt="fill out me" />
+</picture>
+```
 
-### Before 1.0.0 release:
+## Useful links
 
-- [ ] `@squoosh/lib` to `peerDependencies`
-- [ ] `README.md`
-  - [ ] Example of using the resulting images in HTML
-  - [ ] Possible build option without `.png` and `.jpg`
-  - [ ] Section with useful links
-  - [ ] Store the original resource for screens with maximum DPR, then resize for all supported screen sizes
-- [x] Find out what the `preprocessOptions.resize.enabled` affects
-- [x] `CHANGELOG.md`
-- [x] Git workflow for tests
-- [x] [dependabot](https://github.com/dependabot)
-- [x] ~~JSDoc~~ or d.ts
-- [x] [yaspeller](https://github.com/hcodes/yaspeller)
-- [x] Clear `.gitignore`
-
-### Someday:
-
-- [ ] Logging (compression %, before kB, after kB)
-- [ ] Support for `presets` to create multiple images of different sizes \
-       `[ { resize: { width: width * 0.5 } }, { postfix: "@2x" } ]`
+- https://www.smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/
+- https://www.industrialempathy.com/posts/image-optimizations/
+- https://www.industrialempathy.com/posts/avif-webp-quality-settings/
+- https://cloudinary.com/blog/time_for_next_gen_codecs_to_dethrone_jpeg

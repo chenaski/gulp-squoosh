@@ -23,12 +23,12 @@ function processImages() {
             },
           },
           encodeOptions: {
-            webp: {},
+            jxl: {},
             avif: {},
+            webp: {},
             // mozjpeg: {},
-            // jxl: {},
             // oxipng: {},
-            // wp2: {},
+            // wp2: {}
           },
         }))
       )
