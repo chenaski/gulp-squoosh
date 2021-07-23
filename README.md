@@ -96,6 +96,23 @@ function processImages() {
 </picture>
 ```
 
+## Troubleshooting
+
+### WASM memory error
+
+You cannot run multiple `gulp-squoosh` tasks in parallel (via `gulp.parallel`) because you will get a `wasm memory error`.
+You can just replace it with `gulp.serial`, it will not affect the speed:
+
+```js
+gulp.parallel(/* ... */ compressImages, /* ... */ compressOtherImages);
+
+// become
+
+gulp.parallel(
+  /* ... */ gulp.series(compressImages, compressOtherImages) /* ... */
+);
+```
+
 ## Useful links
 
 - https://www.smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/
