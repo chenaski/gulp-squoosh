@@ -1,3 +1,10 @@
+## 0.5.2 (2021-07-23)
+
+- Add `Troubleshooting` section in `README` ([8b43c82](https://github.com/chenaski/gulp-squoosh/commit/8b43c82))
+- Bump @squoosh/lib from 0.3.1 to 0.4.0 ([e3006af](https://github.com/chenaski/gulp-squoosh/commit/e3006af))
+- Bump gulp-squoosh from 0.5.0 to 0.5.1 in /example ([33cd5f6](https://github.com/chenaski/gulp-squoosh/commit/33cd5f6))
+- Bump lint-staged from 11.0.1 to 11.1.0 ([2d223ce](https://github.com/chenaski/gulp-squoosh/commit/2d223ce))
+
 ## 0.5.1 (2021-07-17)
 
 - Remove `preprocessOptions.resize.enabled` field ([15515f7](https://github.com/chenaski/gulp-squoosh/commit/15515f7))
