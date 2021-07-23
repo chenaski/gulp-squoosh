@@ -2,6 +2,12 @@
 
 Gulp plugin to compress images using [Squoosh](https://github.com/GoogleChromeLabs/squoosh).
 
+![github `test` workflow status](https://github.com/chenaski/gulp-squoosh/actions/workflows/test.yml/badge.svg)
+![npm version](https://img.shields.io/npm/v/gulp-squoosh)
+![license](https://img.shields.io/npm/l/gulp-squoosh)
+![npm downloads](https://img.shields.io/npm/dm/gulp-squoosh)
+![nodejs support](https://img.shields.io/node/v/gulp-squoosh)
+
 ## Installation
 
 ```
