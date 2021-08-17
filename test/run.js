@@ -6,15 +6,18 @@
 
   const removeImages = async ({ version }) => {
     try {
+      console.log(`Remove ${IMAGE_NAME}:${version}`);
       return await $`docker rmi ${IMAGE_NAME}:${version}`;
     } catch (e) {}
   };
 
   const buildImages = async ({ version }) => {
+    console.log(`Build ${IMAGE_NAME}:${version}`);
     return await $`docker build -q -t ${IMAGE_NAME}:${version} --build-arg NODE_VERSION=${version} -f test/Dockerfile .`;
   };
 
   const runImages = async ({ version }) => {
+    console.log(`Start ${IMAGE_NAME}:${version}`);
     return await $`docker run --rm ${IMAGE_NAME}:${version}`
       .then((result) => {
         return {
@@ -23,6 +26,7 @@
         };
       })
       .catch((result) => {
+        console.error(result.stderr);
         return {
           version,
           exitCode: result.exitCode,
@@ -34,7 +38,6 @@
     await removeImages({ version });
     await buildImages({ version });
 
-    console.log(`run node:${version}`);
     return await runImages({ version });
   });
 

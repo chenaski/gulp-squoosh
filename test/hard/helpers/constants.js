@@ -1,12 +1,12 @@
-const fs = require("fs");
 const path = require("path");
 
 const { DEFAULT_ENCODE_OPTIONS } = require("../../../lib/processImage");
 
 const FIXTURES_DIR = path.resolve(__dirname, "../../fixtures");
-const FIXTURE_IMAGES_PATHS = fs
-  .readdirSync(FIXTURES_DIR)
-  .map((fileName) => path.join(FIXTURES_DIR, fileName));
+const FIXTURE_IMAGES_PATHS = [
+  path.join(FIXTURES_DIR, "100x56.jpg"),
+  path.join(FIXTURES_DIR, "100x100.png"),
+];
 
 const FIXTURE_SIZE_ORIGINAL = "FIXTURE_SIZE_ORIGINAL";
 const FIXTURE_SIZE_100_100 = "FIXTURE_SIZE_100_100";

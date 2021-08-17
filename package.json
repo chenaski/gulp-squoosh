@@ -50,7 +50,7 @@
   "scripts": {
     "format": "prettier --ignore-path .gitignore -wu .",
     "test": "jest --testPathIgnorePatterns test/hard && check-dts && npm run spell-check",
-    "jest": "jest --testPathIgnorePatterns test/hard",
+    "jest": "jest --testPathIgnorePatterns test/hard --no-cache",
     "test:coverage": "jest --testPathIgnorePatterns test/hard --coverage --no-cache",
     "test:hard": "jest --testPathPattern test/hard",
     "test:docker": "zx test/run.js",
