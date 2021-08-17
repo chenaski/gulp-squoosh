@@ -48,7 +48,7 @@
     "README.md": "yaspeller"
   },
   "scripts": {
-    "format": "prettier -wu .",
+    "format": "prettier --ignore-path .gitignore -wu .",
     "test": "jest --testPathIgnorePatterns test/hard && check-dts && npm run spell-check",
     "jest": "jest --testPathIgnorePatterns test/hard",
     "test:coverage": "jest --testPathIgnorePatterns test/hard --coverage --no-cache",
