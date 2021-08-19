@@ -1,3 +1,19 @@
+## 0.8.0 (2021-08-19)
+
+- Add `filePath` for options factory ([2bed67a](https://github.com/chenaski/gulp-squoosh/commit/2bed67a))
+
+### Dependencies
+
+- Bump check-dts from 0.5.4 to 0.5.5 ([113343c](https://github.com/chenaski/gulp-squoosh/commit/113343c))
+- Bump colorette from 1.2.2 to 1.3.0 ([9c76d85](https://github.com/chenaski/gulp-squoosh/commit/9c76d85))
+- Bump gulp-squoosh from 0.5.1 to 0.6.0 in /example ([1cfda8e](https://github.com/chenaski/gulp-squoosh/commit/1cfda8e))
+- Bump gulp-squoosh from 0.6.0 to 0.7.0 in /example ([28881c2](https://github.com/chenaski/gulp-squoosh/commit/28881c2))
+- Bump lint-staged from 11.1.0 to 11.1.1 ([da84f96](https://github.com/chenaski/gulp-squoosh/commit/da84f96))
+- Bump lint-staged from 11.1.1 to 11.1.2 ([3093a39](https://github.com/chenaski/gulp-squoosh/commit/3093a39))
+- Bump simple-git-hooks from 2.5.1 to 2.6.1 ([18fe907](https://github.com/chenaski/gulp-squoosh/commit/18fe907))
+- Bump zx from 2.0.0 to 2.1.0 ([b738523](https://github.com/chenaski/gulp-squoosh/commit/b738523))
+- Bump zx from 2.1.0 to 3.0.0 ([4311d66](https://github.com/chenaski/gulp-squoosh/commit/4311d66))
+
 ## 0.7.0 (2021-07-29)
 
 - Downgrade `@squoosh/lib` version ([2e75f11](https://github.com/chenaski/gulp-squoosh/commit/2e75f11))
