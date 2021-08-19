@@ -1,3 +1,4 @@
+import * as path from "path";
 import gulp from "gulp";
 import gulpSquoosh from "../index";
 
@@ -67,7 +68,14 @@ const options: GulpSquooshOptions = {
   encodeOptions: encodeOptions,
 };
 
-const optionsFactory: GulpSquooshOptionsFactory = ({ width, height, size }) => {
+const optionsFactory: GulpSquooshOptionsFactory = ({
+  width,
+  height,
+  size,
+  filePath,
+}) => {
+  const extname = path.extname(filePath);
+
   return {
     preprocessOptions: {
       resize: {

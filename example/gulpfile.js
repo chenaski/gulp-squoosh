@@ -1,3 +1,4 @@
+const path = require("path");
 const gulp = require("gulp");
 const gulpSquoosh = require("gulp-squoosh");
 const gulpCache = require("gulp-cache");
@@ -15,20 +16,20 @@ function processImages() {
     .src(SOURCE)
     .pipe(
       gulpCache(
-        gulpSquoosh(({ width, height, size }) => ({
+        gulpSquoosh(({ width, filePath }) => ({
           preprocessOptions: {
             resize: {
               width: width * 0.5,
-              height: height * 0.5,
             },
           },
           encodeOptions: {
             jxl: {},
             avif: {},
             webp: {},
-            // mozjpeg: {},
-            // oxipng: {},
             // wp2: {}
+            ...(path.extname(filePath) === ".png"
+              ? { oxipng: {} }
+              : { mozjpeg: {} }),
           },
         }))
       )

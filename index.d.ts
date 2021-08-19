@@ -7,10 +7,12 @@ export type GulpSquooshOptionsFactory = ({
   width,
   height,
   size,
+  filePath,
 }: {
   width: number;
   height: number;
   size: number;
+  filePath: string;
 }) => GulpSquooshOptions;
 
 export interface ResizeOptions {
