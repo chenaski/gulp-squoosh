@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@types/gulp": "^4.0.9",
-    "check-dts": "^0.5.2",
+    "check-dts": "^0.6.1",
     "get-stream": "^6.0.1",
     "gulp": "^4.0.2",
     "jest": "^27.0.5",
