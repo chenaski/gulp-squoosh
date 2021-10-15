@@ -1,3 +1,23 @@
+## 0.9.0 (2021-10-15)
+
+- Replace `colorette` with `chalk` ([d4abdd6](https://github.com/chenaski/gulp-squoosh/commit/d4abdd6))
+
+### Dependencies
+
+- Bump check-dts from 0.5.5 to 0.6.1 ([4f53d4f](https://github.com/chenaski/gulp-squoosh/commit/4f53d4f))
+- Bump colorette from 1.3.0 to 1.4.0 ([8e5343a](https://github.com/chenaski/gulp-squoosh/commit/8e5343a))
+- Bump gulp-squoosh from 0.7.0 to 0.8.0 in /example ([e6eaecb](https://github.com/chenaski/gulp-squoosh/commit/e6eaecb))
+- Bump jest from 27.0.6 to 27.1.0 ([5fa4c38](https://github.com/chenaski/gulp-squoosh/commit/5fa4c38))
+- Bump jest from 27.1.0 to 27.1.1 ([8e3f92f](https://github.com/chenaski/gulp-squoosh/commit/8e3f92f))
+- Bump jest from 27.1.1 to 27.2.4 ([5b9a8f7](https://github.com/chenaski/gulp-squoosh/commit/5b9a8f7))
+- Bump jest from 27.2.4 to 27.2.5 ([ec4203f](https://github.com/chenaski/gulp-squoosh/commit/ec4203f))
+- Bump lint-staged from 11.1.2 to 11.2.3 ([0de7913](https://github.com/chenaski/gulp-squoosh/commit/0de7913))
+- Bump prettier from 2.3.2 to 2.4.1 ([64c7fcf](https://github.com/chenaski/gulp-squoosh/commit/64c7fcf))
+- Bump yaspeller from 7.0.0 to 7.2.0 ([4e7b1d9](https://github.com/chenaski/gulp-squoosh/commit/4e7b1d9))
+- Bump zx from 3.0.0 to 3.1.0 ([185ab65](https://github.com/chenaski/gulp-squoosh/commit/185ab65))
+- Bump zx from 3.1.0 to 4.0.0 ([64f3044](https://github.com/chenaski/gulp-squoosh/commit/64f3044))
+- Bump zx from 4.0.0 to 4.2.0 ([146dbc6](https://github.com/chenaski/gulp-squoosh/commit/146dbc6))
+
 ## 0.8.0 (2021-08-19)
 
 - Add `filePath` for options factory ([2bed67a](https://github.com/chenaski/gulp-squoosh/commit/2bed67a))
@@ -45,8 +65,7 @@
 
 ### Dependencies
 
-- Bump check-dts from 0.5.2 to 0.5.3 ([bd285a9](https://github.com/chenaski/gulp-squoosh/commit/bd285a9))
-- Bump check-dts from 0.5.3 to 0.5.4 ([da829b1](https://github.com/chenaski/gulp-squoosh/commit/da829b1))
+- Bump check-dts from 0.5.2 to 0.5.4 ([bd285a9](https://github.com/chenaski/gulp-squoosh/commit/bd285a9))
 - Bump gulp-squoosh from 0.4.1 to 0.5.0 in /example ([5bd5f00](https://github.com/chenaski/gulp-squoosh/commit/5bd5f00))
 - Bump lint-staged from 11.0.0 to 11.0.1 ([fa351b3](https://github.com/chenaski/gulp-squoosh/commit/fa351b3))
 - Bump through2 from 2.0.5 to 4.0.2 ([83ef1b0](https://github.com/chenaski/gulp-squoosh/commit/83ef1b0))
