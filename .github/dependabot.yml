@@ -9,4 +9,4 @@ updates:
   - package-ecosystem: "npm"
     directory: "/example"
     schedule:
-      interval: "daily"
+      interval: "weekly"
