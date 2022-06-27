@@ -72,7 +72,7 @@
     "get-stream": "^6.0.1",
     "gulp": "^4.0.2",
     "jest": "^27.4.5",
-    "lint-staged": "^12.1.5",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.5.1",
     "simple-git-hooks": "^2.7.0",
     "vinyl": "^2.2.1",
