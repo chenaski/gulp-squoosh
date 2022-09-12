@@ -71,7 +71,7 @@
     "check-dts": "^0.6.6",
     "get-stream": "^6.0.1",
     "gulp": "^4.0.2",
-    "jest": "^27.4.5",
+    "jest": "^29.0.3",
     "lint-staged": "^12.1.5",
     "prettier": "^2.5.1",
     "simple-git-hooks": "^2.7.0",
