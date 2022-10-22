@@ -75,7 +75,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.5.1",
     "simple-git-hooks": "^2.7.0",
-    "vinyl": "^2.2.1",
+    "vinyl": "^3.0.0",
     "yaspeller": "^8.0.0",
     "zx": "^7.1.1"
   },
