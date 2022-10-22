@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/chenaski/gulp-squoosh",
   "engines": {
-    "node": " ^12.5.0 || ^14.0.0 || ^16.0.0 || ^18.0.0 "
+    "node": " ^12.5.0 || ^14.0.0 || ^16.0.0 "
   },
   "main": "index.js",
   "types": "index.d.ts",
