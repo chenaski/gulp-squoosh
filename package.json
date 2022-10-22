@@ -49,13 +49,13 @@
   },
   "scripts": {
     "format": "prettier --ignore-path .gitignore -wu .",
-    "test": "jest --testPathIgnorePatterns test/hard && check-dts && npm run spell-check",
+    "test": "jest --testPathIgnorePatterns test/hard && npm run check-dts && npm run spell-check",
     "jest": "jest --testPathIgnorePatterns test/hard --no-cache",
     "test:coverage": "jest --testPathIgnorePatterns test/hard --coverage --no-cache",
     "test:hard": "jest --testPathPattern test/hard",
     "test:docker": "zx test/run.js",
     "test:docker:serial": "test/run.sh",
-    "check-dts": "check-dts",
+    "check-dts": "check-dts test/*.ts",
     "spell-check": "yaspeller README.md",
     "generate-changelog": "npx conventional-changelog-cli -i CHANGELOG.md -s"
   },
@@ -86,7 +86,10 @@
       "squoosh",
       "Squoosh",
       "libSqooush",
-      "WASM"
+      "WASM",
+      "ES",
+      "ESM",
+      "CommonJS"
     ]
   }
 }

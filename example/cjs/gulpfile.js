@@ -27,9 +27,7 @@ function processImages() {
             avif: {},
             webp: {},
             // wp2: {}
-            ...(path.extname(filePath) === ".png"
-              ? { oxipng: {} }
-              : { mozjpeg: {} }),
+            ...(path.extname(filePath) === ".png" ? { oxipng: {} } : { mozjpeg: {} }),
           },
         }))
       )

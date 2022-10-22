@@ -22,10 +22,7 @@ const gulp = require("gulp");
 const gulpSquoosh = require("gulp-squoosh");
 
 function processImages() {
-  return gulp
-    .src("src/images/**")
-    .pipe(gulpSquoosh())
-    .pipe(gulp.dest("dist/images"));
+  return gulp.src("src/images/**").pipe(gulpSquoosh()).pipe(gulp.dest("dist/images"));
 }
 ```
 
@@ -57,7 +54,11 @@ const DEFAULT_ENCODE_OPTIONS = {
 
 ## Example
 
-[Full Example](example/gulpfile.js)
+You can see full source code of the example [here](example/cjs/gulpfile.js).
+
+With growing adoption of ES modules, more and more libraries [drop CommonJS support](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
+Despite the fact this library doesn't support ESM, you can continue to use it in your ESM projects,
+[here is an example](example/esm/gulpfile.js).
 
 ```js
 const gulp = require("gulp");
@@ -83,9 +84,7 @@ function processImages() {
             avif: {},
             webp: {},
             // wp2: {}
-            ...(path.extname(filePath) === ".png"
-              ? { oxipng: {} }
-              : { mozjpeg: {} }),
+            ...(path.extname(filePath) === ".png" ? { oxipng: {} } : { mozjpeg: {} }),
           },
         }))
       )
@@ -94,12 +93,14 @@ function processImages() {
 }
 ```
 
+Then you can use converted images with [`<picture>`](https://web.dev/learn/design/picture-element/) tag:
+
 ```html
 <picture>
   <source srcset="image.jxl" type="image/jxl" />
   <source srcset="image.avif" type="image/avif" />
   <source srcset="image.webp" type="image/webp" />
-  <img src="image.webp" alt="fill out me" />
+  <img src="image.jpg" alt="fill out me" />
 </picture>
 ```
 
@@ -108,16 +109,14 @@ function processImages() {
 ### WASM memory error
 
 You cannot run multiple `gulp-squoosh` tasks in parallel (via `gulp.parallel`) because you will get a `wasm memory error`.
-You can just replace it with `gulp.serial`, it will not affect the speed:
+But you can just replace it with `gulp.serial`, it will not affect the speed:
 
 ```js
 gulp.parallel(/* ... */ compressImages, /* ... */ compressOtherImages);
 
 // become
 
-gulp.parallel(
-  /* ... */ gulp.series(compressImages, compressOtherImages) /* ... */
-);
+gulp.parallel(/* ... */ gulp.series(compressImages, compressOtherImages) /* ... */);
 ```
 
 ## Useful links
