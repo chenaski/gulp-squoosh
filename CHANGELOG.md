@@ -1,3 +1,9 @@
+## 0.11.0 (2022-10-23)
+
+- Drop node 18 from engines ([84451b3](https://github.com/chenaski/gulp-squoosh/commit/84451b3))
+- Lock `jest` version ([c97b3d9](https://github.com/chenaski/gulp-squoosh/commit/c97b3d9))
+- Revert `package-lock.json` ([b468533](https://github.com/chenaski/gulp-squoosh/commit/b468533))
+
 ## 0.10.0 (2022-10-23)
 
 - Add example of ESM project ([b1fa1a3](https://github.com/chenaski/gulp-squoosh/commit/b1fa1a3))
