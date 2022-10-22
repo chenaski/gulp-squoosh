@@ -4,9 +4,16 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
   - package-ecosystem: "npm"
-    directory: "/example"
+    directory: "/example/cjs"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "del"
+
+  - package-ecosystem: "npm"
+    directory: "/example/esm"
     schedule:
       interval: "weekly"
