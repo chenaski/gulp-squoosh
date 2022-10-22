@@ -53,11 +53,11 @@ const preprocessOptions: PreprocessOptions = {
 };
 
 const encodeOptions: EncodeOptions = {
-  // THROWS Type 'false' is not assignable to type 'WebpOptions | "auto" | undefined'
+  // THROWS Type 'false' is not assignable to type '"auto" | WebpOptions | undefined'
   webp: false,
-  // THROWS Type '"avifOptions"' is not assignable to type 'AvifOptions | "auto" | undefined'
+  // THROWS Type '"avifOptions"' is not assignable to type '"auto" | AvifOptions | undefined'
   avif: "avifOptions",
-  // THROWS Type 'number' is not assignable to type 'MozjpegOptions | "auto" | undefined'
+  // THROWS Type 'number' is not assignable to type '"auto" | MozjpegOptions | undefined'
   mozjpeg: 0,
 };
 
@@ -66,7 +66,7 @@ const options: GulpSquooshOptions = {
   encodeOptions: { jpeg2000: {} },
 };
 
-// THROWS Type '({ width, height, size }: { width: number; height: number; size: number; }) => { preprocessOptions: { resize: { width: string; }; }; }' is not assignable to type 'GulpSquooshOptionsFactory'
+// THROWS Type '({ width, height, size }: { width: number; height: number; size: number; filePath: string; }) => { preprocessOptions: { resize: { width: string; }; }; }' is not assignable to type 'GulpSquooshOptionsFactory'
 const optionsFactory: GulpSquooshOptionsFactory = ({ width, height, size }) => {
   return {
     preprocessOptions: {
@@ -80,7 +80,7 @@ const optionsFactory: GulpSquooshOptionsFactory = ({ width, height, size }) => {
 gulp
   .src(SOURCE)
   .pipe(
-    // THROWS Property 'wdth' does not exist on type '{ width: number; height: number; size: number; }'
+    // THROWS Property 'wdth' does not exist on type '{ width: number; height: number; size: number; filePath: string; }'
     gulpSquoosh(({ wdth }) => ({
       preprocessOptions: { resize: { width: wdth } },
     }))
