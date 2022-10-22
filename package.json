@@ -57,7 +57,7 @@
     "test:docker:serial": "test/run.sh",
     "check-dts": "check-dts test/*.ts",
     "spell-check": "yaspeller README.md",
-    "generate-changelog": "npx conventional-changelog-cli -i CHANGELOG.md -s"
+    "generate-changelog": "npx conventional-changelog-cli -i CHANGELOG.md -su"
   },
   "dependencies": {
     "@squoosh/lib": "^0.3.1",
