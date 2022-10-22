@@ -1,0 +1,6 @@
+*
+!lib
+!index.js
+!test/*.spec.js
+!test/fixtures
+!package*.json

@@ -4,6 +4,7 @@ NODE_VERSIONS=(
   "12.5.0-alpine"
   "14.0.0-alpine"
   "16.0.0-alpine"
+  "18.0.0-alpine"
 )
 IMAGE_NAME="gulp-squoosh-node"
 results=()

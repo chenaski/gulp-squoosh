@@ -6,22 +6,23 @@ on:
 
 jobs:
   full:
-    name: Node.js 16 Full
+    name: Node.js Latest Full
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: "npm"
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci
 
       - name: Run tests
-        run: npm run test:coverage
+        run: npm run test:unit:coverage
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
@@ -39,15 +40,16 @@ jobs:
     name: Node.js ${{ matrix.node-version }}
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: "npm"
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci
 
       - name: Run tests
-        run: npm run jest
+        run: npm run test:unit
