@@ -2,6 +2,9 @@
 
 Gulp plugin to compress images using [Squoosh](https://github.com/GoogleChromeLabs/squoosh).
 
+> The library this plugin covers is [going to be deprecated](https://github.com/GoogleChromeLabs/squoosh/pull/1266#issuecomment-1208149979),
+> so you would better consider using another [alternative](https://github.com/lovell/sharp).
+
 ![github `test` workflow status](https://github.com/chenaski/gulp-squoosh/actions/workflows/test.yml/badge.svg)
 ![npm version](https://img.shields.io/npm/v/gulp-squoosh)
 ![license](https://img.shields.io/npm/l/gulp-squoosh)
