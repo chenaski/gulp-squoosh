@@ -5,6 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "jest"
+      - dependency-name: "@squoosh/lib"
 
   - package-ecosystem: "npm"
     directory: "/example/cjs"
