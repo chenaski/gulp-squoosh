@@ -31,7 +31,11 @@ function processImages() {
 
 ## Configuration
 
-For available options, see [libSqooush](https://github.com/GoogleChromeLabs/squoosh/blob/dev/libsquoosh/README.md).
+Plugin uses the same options object as the original library, without any additions.
+
+So, to get actual information about the available options, see [libSqooush](https://github.com/GoogleChromeLabs/squoosh/blob/dev/libsquoosh/README.md).
+
+And you can also check [this issue](https://github.com/chenaski/gulp-squoosh/issues/56).
 
 ```js
 gulpSquoosh({
